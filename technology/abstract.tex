@@ -2,10 +2,12 @@
 
 \documentclass{../../hid-sample/tex/format/laszewski}
 
-\addbibresource{abstract-hid}  
+\addbibresource{abstract-hid.bib}  
 \defbibheading{bibempty}{}
 
 \begin{document}
+
+\maketitle
 
 % input all 5 of your abstracts here to test them. Each will have its own tex file.
 \input{abstract-xms}
@@ -17,6 +19,17 @@
 % accordingly
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}}
+
+\section*{References}
+\printbibliography[heading=bibempty]
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+\printindex
 
 
 \end{document}

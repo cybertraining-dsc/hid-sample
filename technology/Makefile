@@ -16,7 +16,7 @@ LATEX=pdflatex
 #LATEX=pydflatex -k
 
 
-all: 
+all: dest
 	latexmk $(FLAGS) -pvc -view=pdf $(FILE)
 
 
@@ -27,7 +27,11 @@ pdflatex:
 	pdflatex abstract
 
 clean:
-	rm -f	*.pdf *.bbl *.log *.blg *.aux *.out *.idx *.run.xml *.bcf 
+	rm -f	*.pdf *.bbl *.log *.blg *.aux *.out *.idx *.run.xml *.bcf
+	rm -rf dest
+
+dest:
+	mkdir dest
 
 view:
 	open abstract.pdf
