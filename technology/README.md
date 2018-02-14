@@ -24,9 +24,15 @@ Let us assume your hid is hid-sp18-999. You need to clone yourown repo as follow
 Next you need to go into that directory and replicate the technology directory 
 with all its files.
 
-    cp -r ../hid-sample/technology hid-hid-sp18-999
+    cp -r ../hid-sample/technology hid-sp18-999
   
 Now you can modify the files accordingly. Make sure to not checkin the sample 
 files from hid-sample, but modify them. If we find sample files from hid-sample 
 in your github repository we will deduct points.
 
+After you modified your files you want to make a test compile with
+
+    cd ~/github/cloudmesh-community/hid-sp18-999/technology
+    make
+    
+You will see that in dest a pdf file is created that you can look at
