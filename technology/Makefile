@@ -5,4 +5,7 @@ all:
 	pdflatex abstract
 
 clean:
-	rm -f	*.pdf *.bbl *.log *.blg *.aux
+	rm -f	*.pdf *.bbl *.log *.blg *.aux *.out
+
+view:
+	open abstract.pdf
