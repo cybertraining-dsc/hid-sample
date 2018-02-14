@@ -22,6 +22,7 @@ Let us assume your hid is hid-sp18-999. You need to clone yourown repo as follow
     git clone https://github.com/cloudmesh-community/hid-sp18-999.git
     cp -r hid-sample/technology hid-sp18-999
     
+Warning: Please make sure there is no / after the technology directory name.
   
 Next you need to go into that directory and replicate the technology directory 
 with all its files.
