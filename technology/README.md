@@ -19,7 +19,7 @@ now https.
 Let us assume your hid is hid-sp18-999. You need to clone yourown repo as follows
 
     cd ~/github/cloudmesh-community
-    git clone https://github.com/cloudmesh-community/hid-hid-sp18-999.git
+    git clone https://github.com/cloudmesh-community/hid-sp18-999.git
   
 Next you need to go into that directory and replicate the technology directory 
 with all its files.
