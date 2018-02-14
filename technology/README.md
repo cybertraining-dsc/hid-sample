@@ -20,11 +20,11 @@ Let us assume your hid is hid-sp18-999. You need to clone yourown repo as follow
 
     cd ~/github/cloudmesh-community
     git clone https://github.com/cloudmesh-community/hid-sp18-999.git
+    cp -r ../hid-sample/technology hid-sp18-999
+    
   
 Next you need to go into that directory and replicate the technology directory 
 with all its files.
-
-    cp -r ../hid-sample/technology hid-sp18-999
   
 Now you can modify the files accordingly. Make sure to not checkin the sample 
 files from hid-sample, but modify them. If we find sample files from hid-sample 
