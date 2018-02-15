@@ -31,14 +31,14 @@ information. Make sure to not checkin the sample files from
 hid-sample, but modify them. If we find sample files from hid-sample
 in your github repository we will deduct points.
 
-After you modified your files you want to make a test compile with
+After you have modified your files you want to make a test compile with
 
     cd ~/github/cloudmesh-community/hid-sp18-999/technology
     make
     
 You will see that in dest a pdf file is created that you can look at
 
-You will need in technology all five abstracts with the filename
+You will need in all five abstracts in the technology folder.   Each file name should have the following format:
 
     abstract-<technology>.tex
 
@@ -46,10 +46,10 @@ as well as the bibliography file
 
     hid-sp18-999.bib
 
-make sure all references are changed to include your hid prefix as a
+Make sure all references are changed to include your hid prefix as a
 label. For more information see the text in abstract-xms.tex
 
-Before you commit delete in your directory the files
+Before you commit, delete the following files that are should be in your directory:
 
     hid-sample.bib
     abstract-xms.tex
