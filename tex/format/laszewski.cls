@@ -38,16 +38,15 @@
 %	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
+\usepackage{tikz}
 \usepackage{currfile}
 \usepackage{comment}
 \usepackage{shorttoc}
-\usepackage{markdown}
 \usepackage{todonotes}
 \usepackage{fancyvrb}
 \usepackage{parskip}
 \usepackage{longtable}
 \usepackage{lipsum} % Inserts dummy text
-\usepackage{tikz} % Required for drawing custom shapes
 \usepackage[english]{babel} % English language/hyphenation
 \usepackage{enumitem} % Customize lists
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
@@ -63,6 +62,7 @@
 \usepackage{datetime}
 %\usepackage{minted} % use lstlisting instead
 \usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm,headsep=10pt,a4paper]{geometry} % Page margins
+\usepackage{xstring}
 
 %\usepackage{tipa}
 \parindent 0pt
@@ -110,9 +110,6 @@
 %	BIBLIOGRAPHY AND INDEX
 %-----------------------------------------------------------------------------
 
-%\addbibresource{bib/bibliography.bib} % BibTeX bibliography file
-%\addbibresource{bib/refs-jabref.bib} % BibTeX bibliography file
-%\defbibheading{bibempty}{}
 
 %-------------------------------------------------------------------------------
 %	MAIN TABLE OF CONTENTS
@@ -618,7 +615,12 @@ addtohook={%
     %\begin{fileremark}%
     %  \currfiledir\currfilename%
     %\end{fileremark}%
-    \rfoot{\href{https://github.com/cloudmesh/book/blob/dev/\currfiledir\currfilename}{\footnotesize\em\currfiledir\currfilename}}}
+    \rfoot{\href{https://github.com/cloudmesh/book/blob/master/\currfiledir\currfilename}{\footnotesize\em\currfiledir\currfilename}}}
+\newcommand{\MDNAME}{%
+    %\begin{fileremark}%
+    %  \currfiledir\currfilename%
+    %\end{fileremark}%
+    \rfoot{\href{https://github.com/cloudmesh/book/blob/master/\currfiledir\currfilebase.md}{\footnotesize\em\currfiledir\currfilebase.md}}}
 \newcommand{\CHANGE}{\begin{changeremark}THIS WILL CHANGE
     \currfilename\end{changeremark}}
 \newcommand{\TODO}[1]{\todo[inline,bordercolor=yellow,color=yellow!5]{TODO: #1}}
@@ -640,11 +642,11 @@ addtohook={%
 \newcommand{\EURL}[2]{ \hfill \href{#1}{#2 ~ $\Mapsto$} }
 
 \newcommand{\video}[4]{%
-{\em \hfill \href{#4}{#3 (#2)~\includegraphics[width=\baselineskip]{images/video.png}}}    \index{Video!#1!#3 (#2)}
+\textit{\hfill \href{#4}{#3 (#2)~\includegraphics[width=\baselineskip]{images/video.png}}}   \index{Video!#1!#3 (#2)}
 }
 
 \newcommand{\slides}[4]{%
-  {\em  \hfill \href{#4}{#3 (#2)~\includegraphics[width=\baselineskip]{images/slide.png}}} \index{Slides!#1!#3 (#2)}
+  \textit{ \hfill \href{#4}{#3 (#2)~\includegraphics[width=\baselineskip]{images/slide.png}}}\index{Slides!#1!#3 (#2)}
 }
 
 \DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\footnotesize,xleftmargin=.5in}
@@ -680,7 +682,7 @@ addtohook={%
         basicstyle=\small\ttfamily} 
 %        basicstyle=\small\ttfamily} 
 
-\newcommand{\WHERE}[3]{$\square$~ #1 \ref{#2}. \nameref{#2} \hfill ~ #3 ~ \pageref{#2}\\}
+\newcommand{\WHERE}[3]{$\square$~ #1~\ref{#2}. \nameref{#2} \hfill ~ #3 ~ \pageref{#2}\\}
 
 \newenvironment{NOTE2}[1]
     {\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,%
