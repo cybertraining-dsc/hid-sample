@@ -2,6 +2,7 @@
 # now just fill out the owner.  This is a yaml file and must be validated
 # by you. If you do not know how to do that, your first task is to
 # write a python3 program that does this.
+#
 ---
 owner:
   - firstname: "Gregor"

@@ -239,3 +239,7 @@ bib-extract:
 skim:
 	echo $(DEFAULT)
 	open -a /Applications/skim.app $(DEFAULT).pdf
+
+doc:
+	make
+	mv report.pdf ../paper-instructions.pdf
