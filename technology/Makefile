@@ -27,7 +27,7 @@ pdflatex:
 	pdflatex abstract
 
 clean:
-	rm -f	*.pdf *.bbl *.log *.blg *.aux *.out *.idx *.run.xml *.bcf
+	rm -f	*.pdf *.bbl *.log *.blg *.aux *.out *.idx *.run.xml *.bcf *.toc
 	rm -rf dest
 
 dest:
