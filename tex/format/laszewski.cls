@@ -824,4 +824,6 @@ sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centerin
 \renewcommand{\maketitle}{%
 \FRONTMATTER
 }
-\chapterimage{water.png} 
+%\chapterimage{../../hid-sample/tex/images/chapter.png}
+%\usechapterimagefalse
+
