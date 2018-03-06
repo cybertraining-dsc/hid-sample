@@ -57,11 +57,4 @@ the figures in the text. But otherwise there will most likely be no
 conflicts. To avoid any issue, check it first and ask for final
 approval.
 
-Compiling the Review
---------------------
 
-Once your paper has been reviewed you will find a review.tex, a
-issue.tex and a bibtex-error.tex file in your directory. With these
-files you can create the review.pdf file with the command
-
-    make review
