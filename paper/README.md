@@ -18,6 +18,12 @@ which you may edit, The template is in
 
 which you are not allowed to edit.
 
+Make sure you run 
+
+    make check
+    
+whcih provides a conveneient way to check your latex code. Naturally you need to have the full version of LaTeX whcih includes chktex which thsi make tag calls.
+
 Compiling the report
 --------------------
 
