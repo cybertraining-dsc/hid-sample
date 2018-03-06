@@ -22,7 +22,9 @@ Make sure you run
 
     make check
     
-whcih provides a conveneient way to check your latex code. Naturally you need to have the full version of LaTeX whcih includes chktex which thsi make tag calls.
+which provides a conveneient way to check your latex code. Naturally you 
+need to have the full version of LaTeX whcih includes chktex which 
+make check calls.
 
 Compiling the report
 --------------------
