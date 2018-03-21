@@ -43,7 +43,7 @@ do not compile in LaTeX. Make sure you paper always compiles.
 This will also generate a simple check on some common issues. The 
 log file is located in 
 
-    report-latex.log
+    report.log
     
 After the compilation is over.
 
