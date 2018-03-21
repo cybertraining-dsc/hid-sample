@@ -22,7 +22,7 @@ Make sure you run
 
     make check
     
-which provides a conveneient way to check your latex code. Naturally you 
+which provides a convenient way to check your latex code. Naturally you 
 need to have the full version of LaTeX whcih includes chktex which 
 make check calls.
 
@@ -43,7 +43,7 @@ do not compile in LaTeX. Make sure you paper always compiles.
 This will also generate a simple check on some common issues. The 
 log file is located in 
 
-    report-latex.log
+    report.log
     
 After the compilation is over.
 
