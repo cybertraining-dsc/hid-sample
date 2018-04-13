@@ -38,7 +38,8 @@ count_open = content.count("``")
 count_closed = content.count("''")
 
 if count_open != count_closed:
-    sys.exit ("ERROR: quotes ``quoted text'' do not match")
+    msg = "ERROR: quotes ``quoted text'' do not match [open={left}, closed={right}]".format(left=count_open, right=count_closed)
+    sys.exit (msg)
 
         
 if error:
