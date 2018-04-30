@@ -20,14 +20,14 @@ for line in content:
         verbatim = False
         continue
     elif not verbatim and found:
-        verbatim = False
+        verbatim = True
         continue
-    elif '"' in line:
+    elif '"' in line and not verbatim:
         print ("ERROR: found illegal quote in line", count)
         print ("      ", str(count) + ":", line)
         error = True
     if len(line) > 80:
-        print ("WRNING: line longer than 80 characters")
+        print ("WARNING: line longer than 80 characters")
         print ("      ", str(len(line)) + ":", line)
 
 with open(filename) as f:
