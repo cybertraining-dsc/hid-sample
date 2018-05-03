@@ -1075,7 +1075,9 @@ Computing Machinery]
   \ifx\@received\@empty\else
     \par\bigskip\noindent\small\normalfont\@received\par
   \fi}
-\RequirePackage{comment}
+\RequirePackage{fancyvrb}
+\RequirePackage{listings}  
+\RequirePackage{comment}  
 \excludecomment{CCSXML}
 \let\@concepts\@empty
 \newcommand\ccsdesc[2][100]{%
