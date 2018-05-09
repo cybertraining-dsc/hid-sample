@@ -1,18 +1,22 @@
-\paperstatus{0} % a number from 0-100 indicating your status. 100
+% status: 100
+% chapter: TBD
+
+\def\paperstatus{0} % a number from 0-100 indicating your status. 100
                 % means completed
-\paperchapter{TBD} % This section is typically a single keyword. from
+\def\paperchapter{TBD} % This section is typically a single keyword. from
                    % a small list. Consult with theinstructors about
                    % yours. They typically fill it out once your first
                    % text has been reviewed.
-\hid{hid-sp18-000, hid-sp18-999} % all hids of the authors of this
+\def\hid{hid-sp18-000, hid-sp18-999} % all hids of the authors of this
                                 % paper. The paper must only be in one
                                 % authors directory and all other
                                 % authors contribute to it in that
                                 % directory. That authors hid must be
                                 % listed first
-\volume{9} % the volume of the proceedings in which this paper is to
+\def\volume{9} % the volume of the proceedings in which this paper is to
            % be included
 
+\def\locator{\hid, Volume: \volume, Chapter: \paperchapter, Status: \paperstatus. \newline}
 
 \title{Big Data for Edge Computing}
 
@@ -49,10 +53,10 @@ somewhat loosely, to the formatting guidelines for
 ACM SIG Proceedings.
 \end{abstract}
 
-\keywords{hid-sp18-000, use up to 5 keywords}
-
+\keywords{\locator\ Use up to 5 keywords, keyword1}
 
 \maketitle
+
 
 \section{Organization}
 
@@ -210,11 +214,38 @@ the caption is before the tabular environment.
 
 \section{Quotes}
 
-Do not use double quotes \verb|"| but use \LaTeX\ ``quotes''. Quotes
-{\bf MUST} not be used to highlight works. Quotes are {\bf STRICTLY}
-used for quoting text from sources with citation following. If we find
-a quote that is not followed by a citation we will return the paper
-without review.
+Do not use double quotes 
+
+\begin{verbatim}
+"this is a wrong example"~\cite{las2018paper} 
+\end{verbatim}
+
+but use \LaTeX\ quotes
+
+\begin{verbatim}
+``This is a right example''~\cite{las2018paper}
+\end{verbatim}
+
+
+Quotes {\bf MUST} not be used to highlight works. Quotes are {\bf
+  STRICTLY} used for quoting text from sources with citation
+following. If we find a quote that is not followed by a citation we
+will return the paper without review. Please note that the two single
+quotes at the begining are not the same direction as the single quotes
+at the end. On the US keyboard the beginning quotes are next to the
+keyborad key 1 and the end quotes are next to the ENTER or RETURN
+key. We use them to identify how much you have quoted. If you have
+quoted more than 30\% we will not review your work. Most conferences
+and journals do not allow quoting above 20\%, so consider yourself
+lucky to have such a relaxed standard. 
+
+\section{Emphasize}
+
+To emphasize a text you do not use double or single quotes you use
+\emph{emph}.
+
+See the Handbook for more details.
+
 
 \section{Labels}
 
