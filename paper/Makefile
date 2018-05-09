@@ -30,10 +30,13 @@ all: prepare
 	make -f Makefile generate
 
 generate: clean iureport check log
-	$(LATEX) ${FLAGS} ${FILE}
-	$(BIBTEX) ${FILE}
-	$(LATEX) ${FLAGS} ${FILE}
-	$(LATEX) ${FLAGS} ${FILE}
+	ifeq (basename "$PWD")
+	else
+		$(LATEX) ${FLAGS} ${FILE}
+		$(BIBTEX) ${FILE}
+		$(LATEX) ${FLAGS} ${FILE}
+		$(LATEX) ${FLAGS} ${FILE}
+	endif
 
 prepare:
 	cd ../../hid-sample; git pull

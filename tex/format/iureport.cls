@@ -1077,7 +1077,8 @@ Computing Machinery]
   \fi}
 \RequirePackage{fancyvrb}
 \RequirePackage{listings}  
-\RequirePackage{comment}  
+\RequirePackage{comment}
+\RequirePackage{color}
 \excludecomment{CCSXML}
 \let\@concepts\@empty
 \newcommand\ccsdesc[2][100]{%
