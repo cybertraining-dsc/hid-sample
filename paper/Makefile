@@ -30,18 +30,18 @@ all: prepare
 	make -f Makefile generate
 
 generate: clean iureport check log
-	ifeq (basename "$PWD")
-	else
 		$(LATEX) ${FLAGS} ${FILE}
 		$(BIBTEX) ${FILE}
 		$(LATEX) ${FLAGS} ${FILE}
 		$(LATEX) ${FLAGS} ${FILE}
-	endif
 
 prepare:
-	cd ../../hid-sample; git pull
-	cp ../../hid-sample/paper/Makefile .
-	cp ../../hid-sample/paper/report.tex .
+	ifeq (basename "$PWD")
+	else
+		cd ../../hid-sample; git pull
+		cp ../../hid-sample/paper/Makefile .
+		cp ../../hid-sample/paper/report.tex .
+	endif
 
 iureport:
 	cp $(SAMPLE)/tex/format/iureport.cls .
