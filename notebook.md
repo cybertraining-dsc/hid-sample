@@ -22,4 +22,4 @@
 
 * 2018/01/11 Posted bio to Piazza
 * 2018/01/13 Installed MacTeX and Jabref
-* 2018/04/03 Finished REsearch Paper
+* 2018/04/03 Finished Research Paper
