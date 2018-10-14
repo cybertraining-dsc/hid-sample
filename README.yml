@@ -1,11 +1,23 @@
-# This file will have to be updated by you throughout the semester, for
-# now just fill out the owner.  This is a yaml file and must be validated
-# by you. If you do not know how to do that, your first task is to
-# write a python3 program that does this.
-#
 ---
 owner:
-  firstname: "Gregor"
-  lastname: "von Laszewski"
-  hid: "your hid number"
-  community: "specify here e516, e222, i524, or e616"
+  firstname: Gregor
+  lastname: von Laszewski
+  hid: fa18-523-00
+  community: i523
+  semester: fa18
+technologies:
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/azure-sql.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/pybrain.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/libcloud.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/openstack-keystone.md
+paper:
+  - keyword: IOT
+    title: Role of Big Data in IoT
+    url: https://github.com/cloudmesh-community/fa18-523-00/blob/master/paper/paper.md
+    group: fa18-523-00 fa18-523-01
+project:
+  - keyword: TBD
+    title: TBD
+    url: https://github.com/cloudmesh-community/fa18-523-00/tree/master/project-report
+    group: fa18-523-00 fa18-523-01
+    code: TBD
