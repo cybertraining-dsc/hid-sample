@@ -5,11 +5,11 @@ the last activities first (e.g. in reverse cronological order by week
 
 # Week Fri 08/31/18 - 09/06/18
 
-* :ok: Attended lecture
-* [-] reviewed python
+* :+1: Attended lecture
+* :o2: reviewed python
 
 # Week Fri 07/31/18 - 13/06/18
 
 In case you did not work during the week, you still need to report it with 
 
-* [ ] N/A
+* :o2: N/A
