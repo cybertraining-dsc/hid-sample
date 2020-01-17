@@ -5,8 +5,8 @@ the last activities first (e.g. in reverse cronological order by week
 
 # Week Fri 08/31/18 - 09/06/18
 
-* [ ] Attended lecture
-* [ ] reviewed python
+* [+] Attended lecture
+* [-] reviewed python
 
 # Week Fri 07/31/18 - 13/06/18
 
