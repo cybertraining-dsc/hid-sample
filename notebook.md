@@ -12,4 +12,5 @@ the last activities first (e.g. in reverse cronological order by week)
 
 In case you did not work during the week, you still need to report it with 
 
-* :o2: N/A
+* :o2: N/A 
+* tbd
